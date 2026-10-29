@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Shelling</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header p-4 border-bottom border-secondary">
+                <h4 class="mb-0">Dashboard Clinic</h4>
+            </div>
+            <ul class="nav flex-column mt-3">
+                <li class="nav-item">
+                   <a href="./index.html" class="btn w-100 text-start mt-2 p-2 nav-link "><i class="fa-regular fa-chart-bar pe-2"></i> Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./registeration.html" class="btn  w-100 text-start mt-2 p-2 nav-link active"><i class="fa-regular fa-address-card pe-2"></i> Patient Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Patient.html" class="btn  w-100 text-start mt-2 p-2 nav-link "><i class="fa-solid fa-bed pe-2"></i> Patient List</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./doctors.html" class="btn  w-100 text-start mt-2 p-2 nav-link "><i class="fa-solid fa-user-doctor pe-2"></i> Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Appointments.html" class="btn  w-100 text-start mt-2 p-2 nav-link"><i class="fa-regular fa-calendar-days pe-2"></i> Appointments</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Billing.html" class="btn  w-100 text-start mt-2 p-2 nav-link"><i class="fa-solid fa-comment-dollar pe-2"></i> Billing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Rreports.html" class="btn w-100 text-start mt-2 p-2 nav-link"><i class="fa-solid fa-file-medical pe-2"></i> Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Setting.html" class="btn  w-100 text-start mt-2 p-2 nav-link"> <i class="fa-solid fa-gear pe-2"></i>Setting</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html" class="btn text-danger w-100 text-start mt-2 fw-bold p-2 nav-link"><i class="fa-solid fa-arrow-right-from-bracket pe-2"></i> Logout</a>
+                </li>
+                <li class="nav-item">
+                    <div class="login ms-2 d-flex justify-content-center align-items-center bg-white rounded-2 me-2 mt-5 pt-2 ">
+                        <a href="./Setting.html" class="text-dark text-decoration-none p-2 fw-bold"><img src="https://i.pinimg.com/474x/8f/b0/ac/8fb0acda4897a3eaefcf02fb4952472b.jpg" width="30px" alt=""> KHORN SEYHA</a>
+                    </div> 
+                </li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom p-3">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn ">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="ms-4">
+                        <input type="search" class="form-control" placeholder="🔍 Search...">
+                    </div>
+                    <div class="ms-auto">
+                        <img src="https://png.pngtree.com/png-vector/20230418/ourmid/pngtree-medical-logo-vector-png-image_6713322.png" class="float-rigth" width="50px" alt="">
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <h4 class="fw-bold mt-2">Patient Registration <i class="fa-solid fa-user-nurse ms-2"></i></h4>
+                <p>Register a new Patient into the client management system.</p>
+
+                    <form action="">
+                        <div class="row mb-2">
+                            <div class="col">
+                                <label class="form-label mb-3">Patient ID *</label>
+                                <input type="number" class="form-control" placeholder="Enter Your ID">
+                            </div>
+                            <div class="col">
+                                <label class="form-label mb-3">Registration date *</label>
+                                <input type="date" class="form-control" placeholder="Enter Quantity" >
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label mb-3">Full Name *</label>
+                                <input type="text" class="form-control" placeholder="Enter Full Name" >
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <label class="form-label mb-3">Gander *</label>
+                                <select class="form-select">
+                                    <option selected>Select Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>   
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <label class="form-label mb-3">Date of Birth *</label>
+                                <input type="date" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <label class="form-label mb-3">Phone Number *</label>
+                                <input type="number" class="form-control" >
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <label class="form-label mb-3">Email *</label>
+                                <input type="email" class="form-control" placeholder="Enter Quantity">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <label class="form-label mb-3">Blood Group *</label>
+                                <select class="form-select">
+                                    <option selected>Select Blood Group</option>
+                                    <option value="A">Group A</option>
+                                    <option value="B">Group B</option>
+                                    <option value="C">Group AB</option>
+                                    <option value="O">Group O</option>
+                                </select>   
+                            </div>
+                            <div class="mb-3 mt-2">
+                                <label class="form-label">Address *</label>
+                                <textarea class="form-control" id="address" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label class="form-label mb-3">Emergency contect Name *</label>
+                                <select class="form-select">
+                                    <option value="royalphnompenhhospital">Royal PhnomPenh hospital</option>
+                                    <option value="Chorai Hospital">Chorai Hospital</option>
+                                    <option value="Ang Duong Hospital">Ang Duong Hospital</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label mb-3">Emergency contect Number *</label>
+                                <select class="form-select">
+                                    <option value="royalphnompenhhospital">(885)12 991 000</option>
+                                    <option value="royalphnompenhhospital">(885)23 684 1001</option>
+                                    <option value="royalphnompenhhospital">(885)23 218 875</option>
+                                </select>
+                            </div> 
+                            <div class="mt-5 text-center p-2">
+                                <button class="btn btn-outline-danger fw-bold w-25 me-4">Back</button>
+                                <button class="btn btn-outline-primary fw-bold w-25">Registration</button>
+                            </div> 
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

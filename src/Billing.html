@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header p-4 border-bottom border-secondary">
+                <h4 class="mb-0">Dashboard Clinic</h4>
+            </div>
+            <ul class="nav flex-column mt-3">
+                <li class="nav-item">
+                   <a href="./index.html" class="btn w-100 text-start mt-2 p-2 nav-link "><i class="fa-regular fa-chart-bar pe-2"></i> Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./registeration.html" class="btn  w-100 text-start mt-2 p-2 nav-link"><i class="fa-regular fa-address-card pe-2"></i> Patient Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Patient.html" class="btn  w-100 text-start mt-2 p-2 nav-link "><i class="fa-solid fa-bed pe-2"></i> Patient List</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./doctors.html" class="btn  w-100 text-start mt-2 p-2 nav-link "><i class="fa-solid fa-user-doctor pe-2"></i> Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Appointments.html" class="btn  w-100 text-start mt-2 p-2 nav-link"><i class="fa-regular fa-calendar-days pe-2"></i> Appointments</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Billing.html" class="btn  w-100 text-start mt-2 p-2 nav-link active"><i class="fa-solid fa-comment-dollar pe-2"></i> Billing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Rreports.html" class="btn w-100 text-start mt-2 p-2 nav-link"><i class="fa-solid fa-file-medical pe-2"></i> Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Setting.html" class="btn  w-100 text-start mt-2 p-2 nav-link"> <i class="fa-solid fa-gear pe-2"></i>Setting</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html" class="btn text-danger w-100 text-start mt-2 fw-bold p-2 nav-link"><i class="fa-solid fa-arrow-right-from-bracket pe-2"></i> Logout</a>
+                </li>
+                <li class="nav-item">
+                    <div class="login ms-2 d-flex justify-content-center align-items-center bg-white rounded-2 me-2 mt-5 pt-2 ">
+                        <a href="./Setting.html" class="text-dark text-decoration-none p-2 fw-bold"><img src="https://i.pinimg.com/474x/8f/b0/ac/8fb0acda4897a3eaefcf02fb4952472b.jpg" width="30px" alt=""> KHORN SEYHA</a>
+                    </div> 
+                </li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom p-3">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn ">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="ms-4">
+                        <input type="search" class="form-control" placeholder="🔍 Search...">
+                    </div>
+                    <div class="ms-auto">
+                        <img src="https://png.pngtree.com/png-vector/20230418/ourmid/pngtree-medical-logo-vector-png-image_6713322.png" class="float-rigth" width="50px" alt="">
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <h4 class="fw-bold pt-2">Billing <i class="fa-regular fa-credit-card ms-2"></i></h4>
+                <p>Register a new Patient into the client management system.</p> <hr>
+                <div class="plane-card">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card p-4 shadow-sm">
+                                <h5 class="fw-bold">Invoicing</h5>
+                                <div class="content-box d-flex flex-row  align-items-center">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <img src="./img/invoice.png" class="text-shadow" width="60px" alt="">
+                                </div>
+                                <div class="d-flex">
+                                    <p>$ 49,99 / Month</p>
+                                    <button class="btn btn-outline-warning fw-bold text-primary shadow w-25 ms-5">Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card p-4 shadow-sm">
+                                <h5 class="fw-bold">Insurance</h5>
+                                <div class="content-box d-flex flex-row  align-items-center">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <img src="./img/life-insurance.png" class="text-shadow" width="60px" alt="">
+                                </div>
+                                <div class="d-flex">
+                                    <p>$ 19,99 / Month</p>
+                                    <button class="btn btn-outline-warning fw-bold text-primary shadow w-25 ms-5">Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card p-4 shadow-sm">
+                                <h5 class="fw-bold">Plan</h5>
+                                <div class="content-box d-flex flex-row  align-items-center">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <img src="./img/work-plan.png" class="text-shadow" width="60px" alt="">
+                                </div>
+                                <div class="d-flex">
+                                    <p>$ 30,00 / Month</p>
+                                    <button class="btn btn-outline-warning fw-bold text-primary shadow w-25 ms-5">Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white mt-4">
+                    <form>
+                        <div class="row">
+                            <div class="col-6 billing-line">
+                                <div class="port-1 fw-bold text-white">
+                                    <p class="ms-2">1</p>
+                                </div>
+                                <h6 class="fw-bold">Billing & Payment</h6>
+                                <div class="row mb-2">
+                                    <div class="col-6">
+                                        <label class="form-label mb-2">Patient Name *</label>
+                                        <input type="email" class="form-control" placeholder="Enter Your Email">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label mb-2">Email *</label>
+                                        <input type="email" class="form-control" placeholder="Enter your Email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label class="form-label mb-2">Phone *</label>
+                                        <input type="number" class="form-control" placeholder="Enter Your Phone">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label mb-2">Date *</label>
+                                        <input type="date" class="form-control" placeholder="Enter Your Phone">
+                                    </div>
+                                </div>
+                                <div class="mb-2 row"> 
+                                    <div class="col-6 mt-2">
+                                        <label class="form-label mb-2">Medicine *</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-6 mt-2">
+                                        <label class="form-label mb-2">Gander *</label>
+                                        <select class="form-select">
+                                            <option selected>Select Gender</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-2 row"> 
+                                    <div class="col-6">
+                                        <label class="form-label mb-2">Country / City *</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label mb-2">Province / District / Village *</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="fw-bold port-2 text-white">
+                                    <p class="ms-2">2</p>
+                                </div>
+                                <h6 class="fw-bold">Payment Methood</h6>
+                                <div class="mb-2">
+                                    <label class="form-label mb-2">Card number *</label>
+                                    <input type="number" class="form-control" placeholder="Code **** **** **** ****">
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label class="form-label mb-2">Exiration date *</label>
+                                        <input type="number" class="form-control" placeholder="MM / YY">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label mb-2">CVV *</label>
+                                        <input type="number" class="form-control" placeholder="****">
+                                    </div>
+                                </div>
+                                <div class="mb-2 pt-2">
+                                    <label class="form-label mb-2">Name card *</label>
+                                    <input type="number" class="form-control" placeholder="Name on card">
+                                </div>
+                                <div class="mb-2">
+                                    <input type="checkbox">
+                                    <label class="form-label mb-2">I have read agreed to the terms and conditions</label>
+                                </div>
+                                <div class="mb-2">
+                                    <img src="https://cdn.freebiesupply.com/logos/large/2x/visa-4-logo-png-transparent.png" width="45px" alt="">
+                                    <img src="https://www.sketchappsources.com/resources/source-image/PayPalCard.png" width="45px" alt="">
+                                    <img src="https://asset.cambodia.gov.kh/gdc/1665562499631-Bakong.jpg" width="55px" class="rounded-2" alt="">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/MasterCard-Logo.svg/3840px-MasterCard-Logo.svg.png" width="40px" class="rounded-2" alt="">
+                                </div>
+
+                            </div>
+                            <div class="text-center mt-4">
+                                <button class="btn btn-outline-primary w-25 fw-bold">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-primary mb-2 mt-2" data-bs-toggle="collapse" data-bs-target="#view">Payment History</button>
+                    <div id="view" class="collapse">
+                        <table class="table table-striped  mt-2">
+                            <thead>
+                                <tr>
+                                    <th>Recepient</th>
+                                    <th>Date</th>
+                                    <th class="text-center">Status</th>
+                                    <th>Amout</th>
+                                    <th class="text-center">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="d-flex">
+                                        <div>
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSzsyWKFrCdZnYw___ozOT1P3r-2qq9OrdTPJZJRlibQGy3k8Bupb41jR&s=10" width="40px" class="rounded-5" alt="">
+                                        </div>
+                                        <div class="caption ms-2">
+                                            <h6 class="fw-bold">Sok Dara</h6> 
+                                            <p class="text-center">Subsciption</p>
+                                        </div>
+                                    </td>
+                                    <td>09/04/2026</td>
+                                    <td><p class="text-center">Success</p></td>
+                                    <td>$ 20,00 / Mount</td>
+                                    <td class="h6 click text-center"><span class="bg-primary p-2 badge"><i class="fa-regular fa-eye"></i></span> <span class="bg-danger p-2 badge "><i class="fa-regular fa-trash-can"></i></span> </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex">
+                                        <div>
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLCtZ3fsnl1WFuiMJU7Nd8j_nGK-aoXURGlLb-vJj1Y6ftyDNe0oWNSWc&s=10" width="40px" class="rounded-5" alt="">
+                                        </div>
+                                        <div class="caption ms-2">
+                                            <h6 class="fw-bold">Chan Makara</h6> 
+                                            <p>Piemium</p>
+                                        </div>
+                                    </td>
+                                    <td>10/08/2026</td>
+                                    <td><p class="text-center">Pending</p></td>
+                                    <td>$ 40,00 / Mount</td>
+                                    <td class="h6 click text-center"><span class="bg-primary p-2 badge"><i class="fa-regular fa-eye"></i></span> <span class="bg-danger p-2 badge "><i class="fa-regular fa-trash-can"></i></span> </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex">
+                                        <div>
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSzsyWKFrCdZnYw___ozOT1P3r-2qq9OrdTPJZJRlibQGy3k8Bupb41jR&s=10" width="40px" class="rounded-5" alt="">
+                                        </div>
+                                        <div class="caption ms-2">
+                                            <h6 class="fw-bold">Sok Dara</h6> 
+                                            <p class="text-center">Subsciption</p>
+                                        </div>
+                                    </td>
+                                    <td>09/04/2026</td>
+                                    <td><p class="text-center">Success</p></td>
+                                    <td>$ 20,00 / Mount</td>
+                                    <td class="h6 click text-center"><span class="bg-primary p-2 badge"><i class="fa-regular fa-eye"></i></span> <span class="bg-danger p-2 badge "><i class="fa-regular fa-trash-can"></i></span> </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex">
+                                        <div>
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLCtZ3fsnl1WFuiMJU7Nd8j_nGK-aoXURGlLb-vJj1Y6ftyDNe0oWNSWc&s=10" width="40px" class="rounded-5" alt="">
+                                        </div>
+                                        <div class="caption ms-2">
+                                            <h6 class="fw-bold">Chan Makara</h6> 
+                                            <p class="text-center">Shopping center</p>
+                                        </div>
+                                    </td>
+                                    <td>10/08/2026</td>
+                                    <td><p class="text-center">Fialed</p></td>
+                                    <td>$ 40,00 / Mount</td>
+                                    <td class="h6 click text-center"><span class="bg-primary p-2 badge"><i class="fa-regular fa-eye"></i></span> <span class="bg-danger p-2 badge "><i class="fa-regular fa-trash-can"></i></span> </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex">
+                                        <div>
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSzsyWKFrCdZnYw___ozOT1P3r-2qq9OrdTPJZJRlibQGy3k8Bupb41jR&s=10" width="40px" class="rounded-5" alt="">
+                                        </div>
+                                        <div class="caption ms-2">
+                                            <h6 class="fw-bold">Sok Dara</h6> 
+                                            <p class="text-center">Subsciption</p>
+                                        </div>
+                                    </td>
+                                    <td>09/04/2026</td>
+                                    <td><p class="text-center">Success</p></td>
+                                    <td>$ 20,00 / Mount</td>
+                                    <td class="h6 click text-center"><span class="bg-primary p-2 badge"><i class="fa-regular fa-eye"></i></span> <span class="bg-danger p-2 badge "><i class="fa-regular fa-trash-can"></i></span> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
